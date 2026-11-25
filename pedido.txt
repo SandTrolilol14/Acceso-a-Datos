@@ -1,0 +1,5 @@
+Teclado;2;25.90
+Ratón;3;15.50
+Monitor;1;129.00
+Cable;1
+Monitor;1;129.00

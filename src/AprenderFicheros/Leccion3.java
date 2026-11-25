@@ -16,14 +16,20 @@ public class Leccion3 {
             while ((linea = br.readLine()) != null) {
 
                 nLineas++;
+                if (linea.isBlank()) {
+                    continue;
+                }
 
                 System.out.println(nLineas + ": " + linea);
-                if (linea.length() > tLineaAnterior) {
+                if (linea.length() >= tLineaAnterior) {
                     mLarga = nLineas;
                     tLineaAnterior = linea.length();
                 }
 
             }
+
+            System.out.println("Total: " + nLineas + " líneas");
+            System.out.println("La más larga es la " + mLarga);
 
         }
 
